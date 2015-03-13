@@ -1,0 +1,27 @@
+{
+  "name": "nw-penetrate",
+  "version": "0.0.1",
+  "description": "Make the nwjs window penetrable. (Windows only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "preinstall": "nw-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zsxsoft/nw-penetrate.git"
+  },
+  "keywords": [
+    "transparent",
+    "penetrate"
+  ],
+  "author": "zsx <zsx@zsxsoft.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsxsoft/nw-penetrate/issues"
+  },
+  "homepage": "https://github.com/zsxsoft/nw-penetrate",
+  "engines": {
+    "node": ">= 0.12.0"
+  }
+}
