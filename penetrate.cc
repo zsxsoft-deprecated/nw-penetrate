@@ -1,6 +1,6 @@
 #include <node.h>
 #include <v8.h>
-#ifdef __WINDOWS_
+#ifdef _WIN32
 #include <windows.h>
 #endif
 using namespace v8;
@@ -9,7 +9,7 @@ void penetrate(const FunctionCallbackInfo<Value>& args) {
 	Isolate* isolate = Isolate::GetCurrent();
 	HandleScope scope(isolate);
 	v8::String::Utf8Value str(args[0]->ToString());
-	#ifdef __WINDOWS_
+	#ifdef _WIN32
 	char *name = *str;
 	HWND h = FindWindow(NULL,(LPCSTR)name);
 	if (h != NULL) {
