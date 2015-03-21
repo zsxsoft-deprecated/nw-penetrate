@@ -9,6 +9,7 @@ void penetrate(const FunctionCallbackInfo<Value>& args) {
 	Isolate* isolate = Isolate::GetCurrent();
 	HandleScope scope(isolate);
 	v8::String::Utf8Value str(args[0]->ToString());
+	#ifdef __WINDOWS_
 	char *name = *str;
 	HWND h = FindWindow(NULL,(LPCSTR)name);
 	if (h != NULL) {
@@ -17,6 +18,7 @@ void penetrate(const FunctionCallbackInfo<Value>& args) {
 		args.GetReturnValue().Set(true);
 		return;
 	}
+	#endif
 	args.GetReturnValue().Set(false);
 }
 
