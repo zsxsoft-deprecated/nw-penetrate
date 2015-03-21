@@ -1,6 +1,6 @@
 {
   "name": "nw-penetrate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make the nwjs window penetrable. (Windows only)",
   "main": "index.js",
   "scripts": {
