@@ -9,6 +9,8 @@ nw-penetrate
 
 It used Win32 API to make your nwjs window penetrable.
 
+![Snapshot](http://zsxsoft.github.io/nw-penetrate/snapshot.gif)
+
 ### Installion
 ```bash 
 $ npm install nw-penetrate
